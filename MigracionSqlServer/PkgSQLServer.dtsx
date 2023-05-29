@@ -5,78 +5,48 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DESKTOP-MQ6849V"
   DTS:CreatorName="DESKTOP-MQ6849V\User"
-  DTS:DTSID="{6FD157E5-2E06-428D-B2CA-093ACE99E55E}"
+  DTS:DTSID="{DCA69645-C4EB-498C-9A2B-B86D9F3ADA4B}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="16.0.5209.0"
   DTS:LocaleID="16394"
-  DTS:ObjectName="Package"
+  DTS:ObjectName="PkgMigrationSQLServer"
   DTS:PackageType="5"
-  DTS:VersionBuild="6"
-  DTS:VersionGUID="{248CA369-8A18-4D03-858C-2AC036C304A9}">
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{8DD45B37-B457-4D5B-9AE2-44B15C981442}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[.\SQLEXPRESS.Destiny.sa]"
+      DTS:refId="Package.ConnectionManagers[.\SQLEXPRESS.Destiny]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{428C2935-4F89-42A2-93AA-CFC59ADA44C6}"
-      DTS:ObjectName=".\SQLEXPRESS.Destiny.sa">
+      DTS:ObjectName=".\SQLEXPRESS.Destiny">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=.\SQLEXPRESS;User ID=sa;Initial Catalog=Destiny;Provider=MSOLEDBSQL.1;Application Name=SSIS-Package-{428C2935-4F89-42A2-93AA-CFC59ADA44C6}.\SQLEXPRESS.Destiny.sa;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=.\SQLEXPRESS;User ID=des_user1;Initial Catalog=Destiny;Provider=MSOLEDBSQL.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package-{428C2935-4F89-42A2-93AA-CFC59ADA44C6}.\SQLEXPRESS.Destiny.sa;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAANH8zLfT3ekWA9FKgKxItfwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAASjz73yeksOvOGqUICxNrtEGdyhwyI3rSl2PMTRL3JOAAAAAAOgAAAAAIAACAAAAAhO8vePODbXDfe4zdtb8+MAjLYXMCKO+OnUnIXpxPlKBAAAABBwOfw1KWRYObCrVxqPKVqQAAAAC6FwpdtvUW54SuAd0lspJ1xu8dXp76BXFLwbGDYVj1WKiaD+7rpLiG26X2kp4M5XINyqHOQDqC6QM7Mf8b/rTY</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAANH8zLfT3ekWA9FKgKxItfwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABaSq/pUVHVtgbQH4SmBwn5cOG3eWk8moWPrzgKqay1rwAAAAAOgAAAAAIAACAAAAAunHGsSXaDHZHRBX3DL+AxoNj2I2yNol961TaQj91HmiAAAAA28mTIuivHO2OeZqQECiMlJg0b1D69ZrA0AO4ZsyBtNEAAAADBiG6yaMiCVU/+pWtorlFd4G/kAbpiXHugpUO2JP8tQCoaIYzFYBn9mz+qJ+XzfKjVOP5XljeO0TNoB7xHM+/D</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[.\SQLEXPRESS.WideWorldImporters.sa]"
+      DTS:refId="Package.ConnectionManagers[.\SQLEXPRESS.WideWorldImporters]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{2E24C8C5-2D83-49C6-9777-33A51802566F}"
-      DTS:ObjectName=".\SQLEXPRESS.WideWorldImporters.sa">
+      DTS:ObjectName=".\SQLEXPRESS.WideWorldImporters">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=.\SQLEXPRESS;User ID=sa;Initial Catalog=WideWorldImporters;Provider=MSOLEDBSQL.1;Application Name=SSIS-Package-{2E24C8C5-2D83-49C6-9777-33A51802566F}.\SQLEXPRESS.WideWorldImporters.sa;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=.\SQLEXPRESS;User ID=sou_user1;Initial Catalog=WideWorldImporters;Provider=MSOLEDBSQL.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package-{2E24C8C5-2D83-49C6-9777-33A51802566F}.\SQLEXPRESS.WideWorldImporters.sa;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAANH8zLfT3ekWA9FKgKxItfwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAM0Vk9TucrhJOr+8Hu6Y195gxkxruKgfHLScDOBQDwPwAAAAAOgAAAAAIAACAAAAAGwpxATuyAruCdQJOm9vnUwp+9s03t9gUWZic5Hyvd8xAAAABAVCI6WW4c8EhLt2XLPurhQAAAALvnXyWwmu7h8WKWlldKeHgVthHmTVjLEdD9VIsHMrzRUGOFnSw0mWHZ++H3+cg10/eDFfJryPZTt2S2keEfFRA</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[DESKTOP-MQ6849V\SQLEXPRESS.Destiny.sa]"
-      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-      DTS:DTSID="{68DECDF8-85AA-431F-8407-DDEAA9B1EED7}"
-      DTS:ObjectName="DESKTOP-MQ6849V\SQLEXPRESS.Destiny.sa">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=DESKTOP-MQ6849V\SQLEXPRESS;User ID=sa;Initial Catalog=Destiny;Application Name=SSIS-Package-{68DECDF8-85AA-431F-8407-DDEAA9B1EED7}DESKTOP-MQ6849V\SQLEXPRESS.Destiny.sa;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAANH8zLfT3ekWA9FKgKxItfwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAJmxfxpxWbyqClx+G7TeVaNoD4r4bVVeL7tZO//dcvBAAAAAAOgAAAAAIAACAAAABOS2SxRrLMennGYcdl/QkCr2u3Zd79VR7JqT1j5nRdRBAAAACuZ8sMiHri1TKruuNx29dDQAAAAO0YK0ujk7q8Z+XvN2buGpfbl1UZsaIzYDXp6Wj/MqQAFP/kyhMIiyFmQJPS2aEvthKO8liDCe2NofS4z1v94vI</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[DESKTOP-MQ6849V\SQLEXPRESS.WideWorldImporters.sa]"
-      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-      DTS:DTSID="{9CEBD167-4192-4E44-8D93-7DDA1EA5E83C}"
-      DTS:ObjectName="DESKTOP-MQ6849V\SQLEXPRESS.WideWorldImporters.sa">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=DESKTOP-MQ6849V\SQLEXPRESS;User ID=sa;Initial Catalog=WideWorldImporters;Application Name=SSIS-Package-{9CEBD167-4192-4E44-8D93-7DDA1EA5E83C}DESKTOP-MQ6849V\SQLEXPRESS.WideWorldImporters.sa;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAANH8zLfT3ekWA9FKgKxItfwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABZqracD4IoSVhKOIh5OLdVm/SnVcyhpIp9YtL0j0CWjgAAAAAOgAAAAAIAACAAAAATERjqn2adA9160J28C+cZREKxAeMwcYErwoLh92VkKRAAAAC6XNk2jN+lgNzmSMg4OTcGQAAAAGEwCkgm9t3TVoLP2pAZCTFmZwn0nYrR4snym25bghPLEglz93LtYgjCioa6aWF3N9Kl3oVT84rY2cCFKI86MG4</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAANH8zLfT3ekWA9FKgKxItfwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAgI01bfWVDzZH6Me13DEkS9Xjyr7uX6GAtA63WS8SYbwAAAAAOgAAAAAIAACAAAABXkXVSWfyvkGEyf7sh811kjHTNJvX0axiacH1RkyY9sSAAAACRVK3HaPdPgY8x4TbrGNg157NVnGmO5uhviHYjLnj4ikAAAACR1kWiX5Yg9p9qqtTK6VheCgMKv1LIgnp2bruW3itrKk3BSnnwn6oMX/BLsp7n8OsMxvsSI2CBqD3j2DyStcTl</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -156,8 +126,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task - Load Tables Cities\OLE DB Destination - Cities Destiny.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[.\SQLEXPRESS.Destiny.sa]"
-                  connectionManagerRefId="Package.ConnectionManagers[.\SQLEXPRESS.Destiny.sa]"
+                  connectionManagerID="Package.ConnectionManagers[.\SQLEXPRESS.Destiny]"
+                  connectionManagerRefId="Package.ConnectionManagers[.\SQLEXPRESS.Destiny]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -345,8 +315,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task - Load Tables Cities\OLE DB Destination - Cities_old Destiny.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[.\SQLEXPRESS.Destiny.sa]"
-                  connectionManagerRefId="Package.ConnectionManagers[.\SQLEXPRESS.Destiny.sa]"
+                  connectionManagerID="Package.ConnectionManagers[.\SQLEXPRESS.Destiny]"
+                  connectionManagerRefId="Package.ConnectionManagers[.\SQLEXPRESS.Destiny]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -526,8 +496,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task - Load Tables Cities\OLE DB Source - Cities WWI.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[.\SQLEXPRESS.WideWorldImporters.sa]"
-                  connectionManagerRefId="Package.ConnectionManagers[.\SQLEXPRESS.WideWorldImporters.sa]"
+                  connectionManagerID="Package.ConnectionManagers[.\SQLEXPRESS.WideWorldImporters]"
+                  connectionManagerRefId="Package.ConnectionManagers[.\SQLEXPRESS.WideWorldImporters]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -767,8 +737,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task - Load Tables Cities\OLE DB Source - Cities_archive WWI.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[.\SQLEXPRESS.WideWorldImporters.sa]"
-                  connectionManagerRefId="Package.ConnectionManagers[.\SQLEXPRESS.WideWorldImporters.sa]"
+                  connectionManagerID="Package.ConnectionManagers[.\SQLEXPRESS.WideWorldImporters]"
+                  connectionManagerRefId="Package.ConnectionManagers[.\SQLEXPRESS.WideWorldImporters]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1046,8 +1016,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task - Load Tables Countries\OLE DB Destination - Countries Destiny.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[.\SQLEXPRESS.Destiny.sa]"
-                  connectionManagerRefId="Package.ConnectionManagers[.\SQLEXPRESS.Destiny.sa]"
+                  connectionManagerID="Package.ConnectionManagers[.\SQLEXPRESS.Destiny]"
+                  connectionManagerRefId="Package.ConnectionManagers[.\SQLEXPRESS.Destiny]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1307,8 +1277,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task - Load Tables Countries\OLE DB Destination - Countries_old Destiny.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[.\SQLEXPRESS.Destiny.sa]"
-                  connectionManagerRefId="Package.ConnectionManagers[.\SQLEXPRESS.Destiny.sa]"
+                  connectionManagerID="Package.ConnectionManagers[.\SQLEXPRESS.Destiny]"
+                  connectionManagerRefId="Package.ConnectionManagers[.\SQLEXPRESS.Destiny]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1560,8 +1530,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task - Load Tables Countries\OLE DB Source - Countries WWI.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[.\SQLEXPRESS.WideWorldImporters.sa]"
-                  connectionManagerRefId="Package.ConnectionManagers[.\SQLEXPRESS.WideWorldImporters.sa]"
+                  connectionManagerID="Package.ConnectionManagers[.\SQLEXPRESS.WideWorldImporters]"
+                  connectionManagerRefId="Package.ConnectionManagers[.\SQLEXPRESS.WideWorldImporters]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1927,8 +1897,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task - Load Tables Countries\OLE DB Source - Countries_archive WWI.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[.\SQLEXPRESS.WideWorldImporters.sa]"
-                  connectionManagerRefId="Package.ConnectionManagers[.\SQLEXPRESS.WideWorldImporters.sa]"
+                  connectionManagerID="Package.ConnectionManagers[.\SQLEXPRESS.WideWorldImporters]"
+                  connectionManagerRefId="Package.ConnectionManagers[.\SQLEXPRESS.WideWorldImporters]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2260,13 +2230,13 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Tarea Ejecutar SQL - truncate tables"
+      DTS:refId="Package\Tarea Ejecutar SQL - truncate tables on destination"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Tarea Ejecutar SQL"
       DTS:DTSID="{36883B66-E093-4624-B646-439DFD24D9E9}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Tarea Ejecutar SQL - truncate tables"
+      DTS:ObjectName="Tarea Ejecutar SQL - truncate tables on destination"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
       DTS:ThreadHint="0">
       <DTS:Variables />
@@ -2283,7 +2253,7 @@
       DTS:refId="Package.PrecedenceConstraints[Restricción]"
       DTS:CreationName=""
       DTS:DTSID="{5DC0F2DA-6F4E-4B09-99A8-444190AD529F}"
-      DTS:From="Package\Tarea Ejecutar SQL - truncate tables"
+      DTS:From="Package\Tarea Ejecutar SQL - truncate tables on destination"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción"
       DTS:To="Package\Data Flow Task - Load Tables Cities" />
@@ -2291,7 +2261,7 @@
       DTS:refId="Package.PrecedenceConstraints[Restricción 1]"
       DTS:CreationName=""
       DTS:DTSID="{3533E9BD-DE05-4B8A-B896-C8F48BEA30CE}"
-      DTS:From="Package\Tarea Ejecutar SQL - truncate tables"
+      DTS:From="Package\Tarea Ejecutar SQL - truncate tables on destination"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción 1"
       DTS:To="Package\Data Flow Task - Load Tables Countries" />
@@ -2311,63 +2281,41 @@
         <NodeLayout
           Size="256,42"
           Id="Package\Data Flow Task - Load Tables Cities"
-          TopLeft="112,154" />
-        <NodeLayout
-          Size="258,42"
-          Id="Package\Tarea Ejecutar SQL - truncate tables"
-          TopLeft="107,63" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Restricción]"
-          TopLeft="238,105">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,49"
-              Start="0,0"
-              End="0,41.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,41.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="79,220" />
         <NodeLayout
           Size="275,42"
           Id="Package\Data Flow Task - Load Tables Countries"
-          TopLeft="402,155" />
+          TopLeft="348,220" />
+        <NodeLayout
+          Size="329,42"
+          Id="Package\Tarea Ejecutar SQL - truncate tables on destination"
+          TopLeft="107,63" />
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Restricción 1]"
-          TopLeft="277.666666666667,105">
+          Id="Package.PrecedenceConstraints[Restricción]"
+          TopLeft="218,105">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="261.833333333333,50"
+              EndConnector="-11,115"
               Start="0,0"
-              End="261.833333333333,42.5">
+              End="-11,107.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,16.1848998459168" />
+                    End="0,42.3339382940109" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,16.1848998459168"
-                    Point2="0,20.1848998459168"
-                    Point3="4,20.1848998459168" />
+                    Point1="0,42.3339382940109"
+                    Point2="0,46.3339382940109"
+                    Point3="-4,46.3339382940109" />
                   <mssgle:LineSegment
-                    End="257.833333333333,20.1848998459168" />
+                    End="-7,46.3339382940109" />
                   <mssgle:CubicBezierSegment
-                    Point1="257.833333333333,20.1848998459168"
-                    Point2="261.833333333333,20.1848998459168"
-                    Point3="261.833333333333,24.1848998459168" />
+                    Point1="-7,46.3339382940109"
+                    Point2="-11,46.3339382940109"
+                    Point3="-11,50.3339382940109" />
                   <mssgle:LineSegment
-                    End="261.833333333333,42.5" />
+                    End="-11,107.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2376,6 +2324,47 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 1]"
+          TopLeft="325,105">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="160.5,115"
+              Start="0,0"
+              End="160.5,107.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,42.3339382940109" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,42.3339382940109"
+                    Point2="0,46.3339382940109"
+                    Point3="4,46.3339382940109" />
+                  <mssgle:LineSegment
+                    End="156.5,46.3339382940109" />
+                  <mssgle:CubicBezierSegment
+                    Point1="156.5,46.3339382940109"
+                    Point2="160.5,46.3339382940109"
+                    Point3="160.5,50.3339382940109" />
+                  <mssgle:LineSegment
+                    End="160.5,107.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <AnnotationLayout
+          Text="Source: Sql Server 2017 Destination: Sql Server 2022"
+          ParentId="Package"
+          FontInfo="{assembly:Null}"
+          Size="188,56"
+          Id="ca06ef44-7b73-414d-b32d-370e917e8eb8"
+          TopLeft="477,43" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -2389,9 +2378,17 @@
           Id="Package\Data Flow Task - Load Tables Cities\OLE DB Source - Cities WWI"
           TopLeft="35,47" />
         <NodeLayout
+          Size="262,42"
+          Id="Package\Data Flow Task - Load Tables Cities\OLE DB Source - Cities_archive WWI"
+          TopLeft="333,51" />
+        <NodeLayout
           Size="254,42"
           Id="Package\Data Flow Task - Load Tables Cities\OLE DB Destination - Cities Destiny"
           TopLeft="38,151" />
+        <NodeLayout
+          Size="275,42"
+          Id="Package\Data Flow Task - Load Tables Cities\OLE DB Destination - Cities_old Destiny"
+          TopLeft="324,152" />
         <EdgeLayout
           Id="Package\Data Flow Task - Load Tables Cities.Paths[OLE DB Source Output]"
           TopLeft="145.5,89">
@@ -2426,14 +2423,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="262,42"
-          Id="Package\Data Flow Task - Load Tables Cities\OLE DB Source - Cities_archive WWI"
-          TopLeft="333,51" />
-        <NodeLayout
-          Size="275,42"
-          Id="Package\Data Flow Task - Load Tables Cities\OLE DB Destination - Cities_old Destiny"
-          TopLeft="324,152" />
         <EdgeLayout
           Id="Package\Data Flow Task - Load Tables Cities.Paths[OLE DB Source Output1]"
           TopLeft="462.75,93">
@@ -2473,7 +2462,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task - Load Tables Cities\OLE DB Destination - Cities Destiny">
+    design-time-name="Package\Data Flow Task - Load Tables Cities\OLE DB Source - Cities_archive WWI">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -2486,7 +2475,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task - Load Tables Cities\OLE DB Source - Cities_archive WWI">
+    design-time-name="Package\Data Flow Task - Load Tables Cities\OLE DB Destination - Cities Destiny">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -2515,45 +2504,23 @@
     design-time-name="Package\Data Flow Task - Load Tables Countries">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="240,42"
-          Id="Package\Data Flow Task - Load Tables Countries\OLE DB Source - Countries WWI"
-          TopLeft="98,50" />
-        <NodeLayout
-          Size="274,42"
-          Id="Package\Data Flow Task - Load Tables Countries\OLE DB Destination - Countries Destiny"
-          TopLeft="87,138" />
-        <EdgeLayout
-          Id="Package\Data Flow Task - Load Tables Countries.Paths[OLE DB Source Output]"
-          TopLeft="221,92">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,46"
-              Start="0,0"
-              End="0,38.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,38.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          Size="294,42"
+          Id="Package\Data Flow Task - Load Tables Countries\OLE DB Destination - Countries_old Destiny"
+          TopLeft="431,134" />
         <NodeLayout
           Size="282,42"
           Id="Package\Data Flow Task - Load Tables Countries\OLE DB Source - Countries_archive WWI"
           TopLeft="432,53" />
         <NodeLayout
-          Size="294,42"
-          Id="Package\Data Flow Task - Load Tables Countries\OLE DB Destination - Countries_old Destiny"
-          TopLeft="431,134" />
+          Size="274,42"
+          Id="Package\Data Flow Task - Load Tables Countries\OLE DB Destination - Countries Destiny"
+          TopLeft="87,138" />
+        <NodeLayout
+          Size="240,42"
+          Id="Package\Data Flow Task - Load Tables Countries\OLE DB Source - Countries WWI"
+          TopLeft="98,50" />
         <EdgeLayout
           Id="Package\Data Flow Task - Load Tables Countries.Paths[OLE DB Source Output1]"
           TopLeft="575.5,95">
@@ -2573,27 +2540,40 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task - Load Tables Countries.Paths[OLE DB Source Output]"
+          TopLeft="221,92">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,46"
+              Start="0,0"
+              End="0,38.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task - Load Tables Countries\OLE DB Source - Countries WWI">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task - Load Tables Countries\OLE DB Destination - Countries Destiny">
+    design-time-name="Package\Data Flow Task - Load Tables Countries\OLE DB Destination - Countries_old Destiny">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -2619,7 +2599,20 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task - Load Tables Countries\OLE DB Destination - Countries_old Destiny">
+    design-time-name="Package\Data Flow Task - Load Tables Countries\OLE DB Destination - Countries Destiny">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task - Load Tables Countries\OLE DB Source - Countries WWI">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
