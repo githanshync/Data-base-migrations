@@ -1,9 +1,13 @@
 # Data Base Sql Server migration.
+# Example to migrate SQL Server tables.
 ## Minimum requirements:
 
-- Visual Studio 2019.
+- Visual Studio 2019 (import the solution Data-base-migrations).
 
-- SQL Server 2017 or SQL Server Express 2017.
+- SQL Server 2017 or SQL Server Express 2017 (source database - target database).
+
+- Download WideWorldImporters-Full.bak backup of sample database "WideWorldImporters" and restore in target database:
+https://github.com/Microsoft/sql-server-samples/releases/tag/wide-world-importers-v1.0
 
 ## To run the ssis package.
 
@@ -23,4 +27,6 @@ In the target database with user sa:
 
 ## In the Visual Studio project:
 
-- Update the passwords created for sou_user1 and des_user1 in the connection manager.
+- In connection manager Update "Server or file name" field with your server name or ip and instance (source database - target database): [SERVER1]\[MSSQLSERVER]
+ 
+- And update the passwords created for sou_user1 and des_user1 in the connection manager.
