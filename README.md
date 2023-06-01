@@ -6,7 +6,7 @@
 
 - SQL Server 2017 or SQL Server Express 2017 (source database - target database).
 
-- Download WideWorldImporters-Full.bak backup of sample database "WideWorldImporters" and restore in target database:
+- Download WideWorldImporters-Full.bak backup of sample database "WideWorldImporters" and restore into source server:
 https://github.com/Microsoft/sql-server-samples/releases/tag/wide-world-importers-v1.0
 
 ## To run the ssis package.
